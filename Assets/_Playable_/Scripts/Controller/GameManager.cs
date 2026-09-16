@@ -105,7 +105,7 @@ namespace Playable
             _quantityEvent++;
             UpdateProgressUI();
 
-            if (_quantityEvent >= _totalEvent)
+            if (_quantityEvent >= _maxEvent)
             {
                 DOVirtual.DelayedCall(2f, () =>
                 {
@@ -114,10 +114,13 @@ namespace Playable
                     {
                         vfx.Play();
                     }
-
-                    EndGame();
-                    ClickToCTA();
                 });
+            }
+
+            if (_quantityEvent >= _totalEvent)
+            {
+                EndGame();
+                DOVirtual.DelayedCall(2f, ClickToCTA);
             }
         }
 

@@ -1,24 +1,24 @@
 {
-    "BuildID": "5367a54d-8b3f-4037-bbdd-41df1d24d96e",
+    "BuildID": "17bb2d0a-841f-4d6e-a543-866bf6710c2b",
     "Command": "project:deploy",
     "ProjectID": "2908ef2555f4afa4ab6241b85cbb2f84",
-    "ProjectStateHash": "714d659bf219069f82599ce29d8096720f0b173741836c68f8f74bdfaafce932",
+    "ProjectStateHash": "5e3129c207d955e9a6607dbb8a36159f0f0b173741836c68f8f74bdfaafce932",
     "StageCompletedAt": 3,
     "EarliestFatalError": 0,
-    "StartTime": 1789527236951,
-    "EndTime": 1789527269489,
+    "StartTime": 1789544052079,
+    "EndTime": 1789544088690,
     "PlaygroundUserID": 37069,
     "OperatingSystem": "win32",
     "UnityPackageID": null,
     "TargetPlatform": "playground",
     "UnityVersion": "6000.0.60f1\r",
     "LunaVersion": "7.2.0",
-    "LogCount": 10,
+    "LogCount": 9,
     "Logs": [
         {
-            "LogID": "9aeca09d-3416-4490-a33a-2591f7d86670",
-            "Order": 9,
-            "Timestamp": 1789527270296,
+            "LogID": "2f4b151b-9d12-4d35-9581-a2764202f72d",
+            "Order": 8,
+            "Timestamp": 1789544089745,
             "Stage": 3,
             "ErrorType": 3,
             "ErrorCode": "LP3007",
@@ -40,9 +40,9 @@
             "Severity": 0
         },
         {
-            "LogID": "85a9001e-cdeb-46c8-8be8-985d155e86bb",
-            "Order": 9,
-            "Timestamp": 1789527270297,
+            "LogID": "2445a0d2-daea-4226-8cbe-869678a07386",
+            "Order": 8,
+            "Timestamp": 1789544089745,
             "Stage": 3,
             "ErrorType": 3,
             "ErrorCode": "LP3012",
@@ -66,9 +66,9 @@
             "Severity": 0
         },
         {
-            "LogID": "0eaa3f68-8f0a-4352-87df-604b65f62405",
+            "LogID": "d6a8ffca-644c-449f-9d99-f4d935bda49c",
             "Order": 0,
-            "Timestamp": 1789527240202,
+            "Timestamp": 1789544055880,
             "Stage": 1,
             "ErrorType": 0,
             "ErrorCode": "LP1009",
@@ -89,9 +89,9 @@
             "Severity": 0
         },
         {
-            "LogID": "52d12e59-8190-4390-9406-c20fd7fd3e37",
+            "LogID": "23b8c102-e65c-4e52-9988-ab280bbb5fb4",
             "Order": 1,
-            "Timestamp": 1789527241287,
+            "Timestamp": 1789544056944,
             "Stage": 1,
             "ErrorType": 2,
             "ErrorCode": "LP1014",
@@ -109,9 +109,9 @@
             "Severity": 0
         },
         {
-            "LogID": "192c3bda-e1de-4e24-a35f-e53d13545d2d",
+            "LogID": "e46f379f-f849-4a21-bb24-b11b490e4cb2",
             "Order": 2,
-            "Timestamp": 1789527241287,
+            "Timestamp": 1789544056944,
             "Stage": 1,
             "ErrorType": 2,
             "ErrorCode": "LP1016",
@@ -135,32 +135,9 @@
             "Severity": 0
         },
         {
-            "LogID": "62d14d3c-fefb-4810-bbfc-d8f8e7fad65d",
+            "LogID": "05905c29-adfc-4329-9e57-6500207b72d6",
             "Order": 3,
-            "Timestamp": 1789527241287,
-            "Stage": 1,
-            "ErrorType": 2,
-            "ErrorCode": "LP1022",
-            "Description": "Extensive use of shader variants",
-            "Details": [
-                "Extensive usage of shader variants negatively affects playable startup time. Please consider them to be less than 20 (22 found). Check Runtime analysis -> shader tab to see used shaders."
-            ],
-            "DescriptionValues": [],
-            "DetailsValues": [
-                "20",
-                "22"
-            ],
-            "LogCount": 1,
-            "LinePosition": 0,
-            "FilePath": "",
-            "ClassName": "",
-            "MemberName": "",
-            "Severity": 0
-        },
-        {
-            "LogID": "e53feb93-91b5-4244-853d-40c76d6db6fc",
-            "Order": 4,
-            "Timestamp": 1789527241297,
+            "Timestamp": 1789544056955,
             "Stage": 1,
             "ErrorType": 0,
             "ErrorCode": "LP1027",
@@ -180,9 +157,9 @@
             "Severity": 0
         },
         {
-            "LogID": "18d4a503-e47a-45ce-8f39-85f5344726d8",
-            "Order": 5,
-            "Timestamp": 1789527241297,
+            "LogID": "30ee5d19-0357-41ab-ba00-e1dfc0d2cce7",
+            "Order": 4,
+            "Timestamp": 1789544056955,
             "Stage": 1,
             "ErrorType": 0,
             "ErrorCode": "LP1032",
@@ -204,9 +181,9 @@
             "Severity": 0
         },
         {
-            "LogID": "8c6468c0-9724-43f3-9f57-b748931771ed",
-            "Order": 6,
-            "Timestamp": 1789527241297,
+            "LogID": "d29dcf99-a83f-4f9c-8c4b-70e192d72263",
+            "Order": 5,
+            "Timestamp": 1789544056956,
             "Stage": 1,
             "ErrorType": 3,
             "ErrorCode": "LP1002",
@@ -227,9 +204,9 @@
             "Severity": 0
         },
         {
-            "LogID": "838199d9-9f68-4dbd-af63-3ef7532ca0ad",
-            "Order": 7,
-            "Timestamp": 1789527241297,
+            "LogID": "c9a0aaee-26c2-4b71-8fab-1bc501c63b34",
+            "Order": 6,
+            "Timestamp": 1789544056956,
             "Stage": 1,
             "ErrorType": 3,
             "ErrorCode": "LP1008",
