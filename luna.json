@@ -34654,7 +34654,7 @@
                         "maxWidth": 256,
                         "maxHeight": 1024,
                         "format": "png32",
-                        "compression": "none",
+                        "compression": "quantSize",
                         "quality": 65,
                         "script": "",
                         "ext": "",
@@ -34664,7 +34664,7 @@
                         "maxWidth": 1024,
                         "maxHeight": 256,
                         "format": "png32",
-                        "compression": "none",
+                        "compression": "quantSize",
                         "quality": 65,
                         "script": "",
                         "ext": "",
@@ -34692,7 +34692,18 @@
                     "script": "",
                     "ext": ""
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Playable_/Sound/Bg_4.ogg"
+                    }
+                ]
             },
             "font": {
                 "default": {
