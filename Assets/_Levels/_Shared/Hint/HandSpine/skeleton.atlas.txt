@@ -1,0 +1,6 @@
+skeleton.png
+size:151,177
+filter:Linear,Linear
+pma:true
+tut_hand2
+bounds:2,2,147,173

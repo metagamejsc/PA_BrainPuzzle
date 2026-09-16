@@ -246,5 +246,5 @@ SubShader {
 	}
 }
 
-CustomEditor "TMPro.EditorUtilities.TMP_SDFShaderGUI"
+CustomEditor "MetaSCustom.Editor.TMP_SDFMobileNoHdrShaderGUI"
 }

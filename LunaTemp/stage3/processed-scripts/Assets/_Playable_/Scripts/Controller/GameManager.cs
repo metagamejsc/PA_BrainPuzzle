@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -27,6 +28,8 @@ namespace Playable
         [SerializeField] private Button _btnBlock;
         [SerializeField] private Image _background;
         [SerializeField] private GameObject _losePanel;
+        [SerializeField] private GameObject _winPanel;
+        [SerializeField] private List<ParticleSystem> _vfxWin;
 
         [Header("Progress UI")] [SerializeField]
         private Image _progressFillImage;
@@ -104,8 +107,17 @@ namespace Playable
 
             if (_quantityEvent >= _totalEvent)
             {
-                EndGame();
-                ClickToCTA();
+                DOVirtual.DelayedCall(2f, () =>
+                {
+                    _winPanel.gameObject.SetActive(true);
+                    foreach (var vfx in _vfxWin)
+                    {
+                        vfx.Play();
+                    }
+
+                    EndGame();
+                    ClickToCTA();
+                });
             }
         }
 
@@ -246,10 +258,7 @@ namespace Playable
         public void ShowLose()
         {
             EndGame();
-            DOVirtual.DelayedCall(1.5f, () =>
-            {
-                _losePanel.gameObject.SetActive(true);
-            });
+            DOVirtual.DelayedCall(1.5f, () => { _losePanel.gameObject.SetActive(true); });
         }
     }
 }

@@ -5,126 +5,128 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    [SerializeField] private GirlPart _part;
-    [SerializeField] private Girl _girl;
     [SerializeField] private SkeletonGraphic _skeletonGraphic;
-    [SerializeField] private List<ItemReaction> _itemReactions;
+    [SerializeField] private RectTransform _dropArea;
+    [SerializeField] private List<TargetReaction> _reactions;
+    private bool _isComplete;
 
-    public GirlPart Part => _part;
+    public bool IsComplete => _isComplete;
 
-    public bool TryAccept([Bridge.Ref] Item.ItemData itemData)
+
+    public bool TryAccept(ItemType itemType)
     {
-        if (_girl == null) return false;
-        if (!_girl.CanReceiveItem) return false;
+        if (_isComplete) return false;
+        TargetReaction reaction = FindReaction(itemType);
+        if (_skeletonGraphic == null || reaction == null || reaction.animations == null ||
+            reaction.animations.Count == 0) return false;
 
-        ItemReaction reaction = FindReaction(itemData.id);
-        bool hasReaction = reaction != null;
-        bool hasRules = hasReaction && reaction.HasAnimationRules();
-        bool matchesCurrentStatus = hasRules && reaction.FindBestRule(_girl.Status) != null;
-
-        if (!matchesCurrentStatus) return false;
-        _girl.ApplyItem(itemData, reaction);
+        PlayAnimations(reaction.animations);
+        Playable.GameManager.Instance?.CountEvent();
+        _isComplete = true;
         return true;
     }
 
-    private ItemReaction FindReaction(int itemId)
+    public bool CanAccept(ItemType itemType)
     {
-        if (_itemReactions == null) return null;
+        return FindReaction(itemType) != null;
+    }
 
-        for (int i = 0; i < _itemReactions.Count; i++)
+    public Rect GetScreenRect(Camera eventCamera)
+    {
+        RectTransform rectTransform = _dropArea;
+        if (rectTransform == null && _skeletonGraphic != null)
         {
-            ItemReaction reaction = _itemReactions[i];
-            if (reaction != null && reaction.itemId == itemId) return reaction;
+            rectTransform = _skeletonGraphic.rectTransform;
+        }
+
+        if (rectTransform == null)
+        {
+            rectTransform = transform as RectTransform;
+        }
+
+        if (rectTransform == null) return Rect.zero;
+
+        Vector3[] corners = new Vector3[4];
+        rectTransform.GetWorldCorners(corners);
+        Vector2 min = RectTransformUtility.WorldToScreenPoint(eventCamera, corners[0]);
+        Vector2 max = min;
+
+        for (int i = 1; i < corners.Length; i++)
+        {
+            Vector2 point = RectTransformUtility.WorldToScreenPoint(eventCamera, corners[i]);
+            min = Vector2.Min(min, point);
+            max = Vector2.Max(max, point);
+        }
+
+        return Rect.MinMaxRect(min.x, min.y, max.x, max.y);
+    }
+
+    public Vector2 GetScreenAnchor(Camera eventCamera)
+    {
+        RectTransform rectTransform = _dropArea;
+        if (rectTransform == null && _skeletonGraphic != null)
+        {
+            rectTransform = _skeletonGraphic.rectTransform;
+        }
+
+        if (rectTransform == null)
+        {
+            rectTransform = transform as RectTransform;
+        }
+
+        return rectTransform != null
+            ? RectTransformUtility.WorldToScreenPoint(eventCamera, rectTransform.position)
+            : Vector2.zero;
+    }
+
+    private TargetReaction FindReaction(ItemType itemType)
+    {
+        if (_reactions == null) return null;
+
+        for (int i = 0; i < _reactions.Count; i++)
+        {
+            TargetReaction reaction = _reactions[i];
+            if (reaction != null && reaction.itemType == itemType) return reaction;
         }
 
         return null;
     }
 
-    [Serializable]
-    public class ItemReaction
+    private void PlayAnimations(List<SpineAnimationData> animations)
     {
-        public int itemId;
-        public List<AnimationRule> animationRules;
+        _skeletonGraphic.Initialize(false);
+        bool hasAnimation = false;
 
-        [SpineSkin(dataField: nameof(_skeletonGraphic))]
-        public string[] skinAdded;
-
-        [SpineSkin(dataField: nameof(_skeletonGraphic))]
-        public string[] skinRemoved;
-
-        public AudioClip audioClip;
-
-        public bool HasAnimationRules()
+        for (int i = 0; i < animations.Count; i++)
         {
-            if (animationRules == null) return false;
+            SpineAnimationData animation = animations[i];
+            if (string.IsNullOrEmpty(animation.animationName)) continue;
 
-            for (int i = 0; i < animationRules.Count; i++)
+            if (!hasAnimation)
             {
-                if (animationRules[i] != null) return true;
+                _skeletonGraphic.AnimationState.SetAnimation(0, animation.animationName, animation.loop);
+                hasAnimation = true;
             }
-
-            return false;
-        }
-
-        public AnimationRule FindBestRule([Bridge.Ref] GirlStatus status)
-        {
-            if (animationRules == null) return null;
-
-            AnimationRule bestRule = null;
-            int bestScore = -1;
-            for (int i = 0; i < animationRules.Count; i++)
+            else
             {
-                AnimationRule rule = animationRules[i];
-                if (rule == null || !rule.Matches(status)) continue;
-
-                int score = rule.Specificity;
-                if (score <= bestScore) continue;
-                bestRule = rule;
-                bestScore = score;
+                _skeletonGraphic.AnimationState.AddAnimation(0, animation.animationName, animation.loop, 0f);
             }
-
-            return bestRule;
         }
     }
 
     [Serializable]
-    public class AnimationRule
+    public class TargetReaction
     {
-        public bool checkBodyShape;
-        public BodyShape bodyShape;
-        public bool checkOutfit;
-        public Outfit outfit;
-        public bool checkRestraint;
-        public Restraint restraint;
-        public List<GirlAnimation> animations;
-
-        public int Specificity =>
-            (checkBodyShape ? 1 : 0) +
-            (checkOutfit ? 1 : 0) +
-            (checkRestraint ? 1 : 0);
-
-        public bool Matches([Bridge.Ref] GirlStatus status)
-        {
-            if (checkBodyShape && bodyShape != status.bodyShape) return false;
-            if (checkOutfit && outfit != status.outfit) return false;
-            if (checkRestraint && restraint != status.restraint) return false;
-            return true;
-        }
-    }
-
-    [Serializable]
-    public struct GirlAnimation
-    {
-        [SpineAnimation(dataField: nameof(_skeletonGraphic))]
-        public string animationName;
-
-        public bool loop;
+        public ItemType itemType;
+        public List<SpineAnimationData> animations;
     }
 }
 
-public enum GirlPart
+[Serializable]
+public struct SpineAnimationData
 {
-    Head,
-    Body,
-    Leg
+    [SpineAnimation(dataField: "_skeletonGraphic")]
+    public string animationName;
+
+    public bool loop;
 }

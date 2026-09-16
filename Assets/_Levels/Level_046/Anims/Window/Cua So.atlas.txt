@@ -1,0 +1,19 @@
+Cua So.png
+size:352,376
+filter:Linear,Linear
+pma:false
+window_door_closed1
+bounds:2,2,115,265
+offsets:1,1,117,267
+rotate:90
+window_door_closed2
+bounds:2,243,128,280
+offsets:1,1,130,282
+rotate:90
+window_door_opened1
+bounds:2,119,122,275
+offsets:1,1,124,277
+rotate:90
+window_door_opened2
+bounds:284,46,64,325
+offsets:1,1,66,327

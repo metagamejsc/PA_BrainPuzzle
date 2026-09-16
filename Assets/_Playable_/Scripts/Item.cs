@@ -1,58 +1,70 @@
-using System;
-using System.Collections.Generic;
+using Playable;
+using Spine.Unity;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(RectTransform))]
-public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class Item : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IDragHandler,
+    IEndDragHandler
 {
-    [SerializeField] private List<ItemData> _data;
-    [SerializeField] private int _dragSortingOrder = 5;
+    [Header("Item Behaviour")] [SerializeField]
+    private ItemType _itemType;
+
+    [SerializeField] private GameObject _normalVisual;
+    [SerializeField] private GameObject _activeVisual;
+    [SerializeField] private Girl _girl;
+    [SerializeField] private SkeletonGraphic _skeletonGraphic;
+    [SerializeField] private System.Collections.Generic.List<SpineAnimationData> _girlAnimations;
+
+    [SpineSkin(dataField: "_skeletonGraphic")] [SerializeField]
+    private string _girlSkinName;
+
+    [Min(0f)] [SerializeField] private float _dropDetectionPadding = 30f;
+    [SerializeField] private AudioClip _dropSound;
 
     private RectTransform _rectTransform;
     private RectTransform _dragPlane;
     private Canvas _canvas;
-    private Canvas _itemCanvas;
     private Transform _originalParent;
     private int _originalSiblingIndex;
     private Vector3 _originalWorldPosition;
-    private bool _isPlaced;
-    private bool[] _usedData;
-    private int _usedCount;
     private Vector3 _pointerOffset;
-    private int _originalSortingOrder;
-    private bool _originalOverrideSorting;
-    private bool _hasCachedSortingOrder;
+    private bool _isDragging;
+    private bool _isGirlSkinPreviewed;
+    private string _previousGirlSkinName;
 
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
         _canvas = GetComponentInParent<Canvas>();
-        _itemCanvas = GetComponent<Canvas>();
-        if (_itemCanvas == null) _itemCanvas = gameObject.AddComponent<Canvas>();
         _dragPlane = _canvas != null ? _canvas.transform as RectTransform : _rectTransform.parent as RectTransform;
-        _usedData = new bool[_data != null ? _data.Count : 0];
         CacheStartState();
+        SetActiveVisual(false);
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         GameController.Instance?.StopTutorialHand();
+        SetActiveVisual(true);
+        PreviewGirlSkin();
+        AudioManager.Instance.PlaySound(_dropSound);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        SetActiveVisual(false);
+        if (!_isDragging) RevertGirlSkin();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (_isPlaced) return;
-
+        _isDragging = true;
         CacheStartState();
         CachePointerOffset(eventData);
-        SetDraggingSortingOrder();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (_isPlaced) return;
-
         if (_dragPlane != null && RectTransformUtility.ScreenPointToWorldPointInRectangle(
                 _dragPlane,
                 eventData.position,
@@ -65,38 +77,70 @@ public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (_isPlaced) return;
+        SetActiveVisual(false);
+        _isDragging = false;
 
-        RestoreSortingOrder();
+        bool accepted = _itemType == ItemType.Microphone
+            ? TryDropMicrophone(eventData)
+            : TryDropOnTarget(eventData);
 
-        if (_data == null || _usedCount >= _data.Count)
+        if (accepted)
         {
-            ResetToStartState();
+            KeepGirlSkin();
+            gameObject.SetActive(false);
             return;
         }
 
-        if (!TryDropOnTarget(eventData, out int usedDataIndex))
-        {
-            ResetToStartState();
-            return;
-        }
-
-        _usedData[usedDataIndex] = true;
-        _usedCount++;
-        if (_usedCount < _data.Count)
-        {
-            ResetToStartState();
-        }
-        else
-        {
-            CompleteDrop();
-        }
+        RevertGirlSkin();
+        ResetToStartState();
     }
 
-    private void CompleteDrop()
+    private void SetActiveVisual(bool active)
     {
-        _isPlaced = true;
-        gameObject.SetActive(false);
+        if (_normalVisual != null) _normalVisual.SetActive(!active);
+        if (_activeVisual != null) _activeVisual.SetActive(active);
+    }
+
+    private bool TryDropMicrophone(PointerEventData eventData)
+    {
+        if (_girl == null || !IsPointerOverGirl(eventData)) return false;
+
+        _girl.PlayAnimations(_girlAnimations);
+        GameController.Instance?.PlayRandomTarget(_itemType);
+        return true;
+    }
+
+    private bool IsPointerOverGirl(PointerEventData eventData)
+    {
+        RectTransform girlRect = _girl.transform as RectTransform;
+        return girlRect != null && RectTransformUtility.RectangleContainsScreenPoint(
+            girlRect,
+            eventData.position,
+            GetEventCamera(eventData));
+    }
+
+    private void PreviewGirlSkin()
+    {
+        if (_isGirlSkinPreviewed || _girl == null || string.IsNullOrEmpty(_girlSkinName)) return;
+
+        string previousSkinName = _girl.CurrentSkinName;
+        if (!_girl.SetSkin(_girlSkinName)) return;
+
+        _previousGirlSkinName = previousSkinName;
+        _isGirlSkinPreviewed = true;
+    }
+
+    private void RevertGirlSkin()
+    {
+        if (!_isGirlSkinPreviewed) return;
+
+        _isGirlSkinPreviewed = false;
+        _girl.RestoreSkin(_previousGirlSkinName);
+    }
+
+    private void KeepGirlSkin()
+    {
+        _isGirlSkinPreviewed = false;
     }
 
     private void CacheStartState()
@@ -127,26 +171,6 @@ public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDrag
         return eventData.pressEventCamera != null ? eventData.pressEventCamera : _canvas?.worldCamera;
     }
 
-    private void SetDraggingSortingOrder()
-    {
-        if (_itemCanvas == null) return;
-
-        _originalOverrideSorting = _itemCanvas.overrideSorting;
-        _originalSortingOrder = _itemCanvas.sortingOrder;
-        _hasCachedSortingOrder = true;
-        _itemCanvas.overrideSorting = true;
-        _itemCanvas.sortingOrder = _dragSortingOrder;
-    }
-
-    private void RestoreSortingOrder()
-    {
-        if (_itemCanvas == null || !_hasCachedSortingOrder) return;
-
-        _itemCanvas.sortingOrder = _originalSortingOrder;
-        _itemCanvas.overrideSorting = _originalOverrideSorting;
-        _hasCachedSortingOrder = false;
-    }
-
     private void ResetToStartState()
     {
         _rectTransform.SetParent(_originalParent, true);
@@ -154,91 +178,24 @@ public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDrag
         _rectTransform.position = _originalWorldPosition;
     }
 
-    private bool TryDropOnTarget(PointerEventData eventData, out int usedDataIndex)
+    private bool TryDropOnTarget(PointerEventData eventData)
     {
-        usedDataIndex = -1;
-        if (EventSystem.current == null) return false;
-
-        HashSet<Target> checkedTargets = new HashSet<Target>();
-        List<Vector2> samplePositions = GetDropSamplePositions(eventData);
-
-        for (int i = 0; i < samplePositions.Count; i++)
-        {
-            PointerEventData sampleEventData = new PointerEventData(EventSystem.current)
-            {
-                position = samplePositions[i]
-            };
-
-            List<RaycastResult> raycastResults = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(sampleEventData, raycastResults);
-
-            foreach (RaycastResult result in raycastResults)
-            {
-                Target target = result.gameObject.GetComponentInParent<Target>();
-                if (target == null || !checkedTargets.Add(target)) continue;
-
-                for (int dataIndex = 0; dataIndex < _data.Count; dataIndex++)
-                {
-                    if (_usedData[dataIndex]) continue;
-                    if (!target.TryAccept(_data[dataIndex])) continue;
-
-                    usedDataIndex = dataIndex;
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    private List<Vector2> GetDropSamplePositions(PointerEventData eventData)
-    {
-        List<Vector2> positions = new List<Vector2> { eventData.position };
-        Vector3[] corners = new Vector3[4];
-        _rectTransform.GetWorldCorners(corners);
-
-        Camera eventCamera = GetEventCamera(eventData);
-        Vector3 center = (corners[0] + corners[2]) * 0.5f;
-        positions.Add(RectTransformUtility.WorldToScreenPoint(eventCamera, center));
-
-        for (int i = 0; i < corners.Length; i++)
-        {
-            Vector3 innerPoint = Vector3.Lerp(center, corners[i], 0.65f);
-            positions.Add(RectTransformUtility.WorldToScreenPoint(eventCamera, innerPoint));
-        }
-
-        return positions;
-    }
-
-    [Serializable]
-    public struct ItemData
-    {
-        public int id;
-        public GirlStateChange stateChange;
-        public AnimationStateTiming animationStateTiming;
-        public ItemResult result;
-    }
-
-    [Serializable]
-    public struct GirlStateChange
-    {
-        public bool changeBodyShape;
-        public BodyShape bodyShape;
-        public bool changeOutfit;
-        public Outfit outfit;
-        public bool changeRestraint;
-        public Restraint restraint;
+        return GameController.Instance != null && GameController.Instance.TryDropOnTarget(
+            _itemType,
+            _rectTransform,
+            eventData.position,
+            GetEventCamera(eventData),
+            _dropDetectionPadding);
     }
 }
 
-public enum ItemResult
+public enum ItemType
 {
-    Lose,
-    Win,
-}
-
-public enum AnimationStateTiming
-{
-    BeforeStateChange,
-    AfterStateChange
+    Talisman,
+    Scissors,
+    SoySauce,
+    Feather,
+    Microphone,
+    Shoes,
+    Window
 }
