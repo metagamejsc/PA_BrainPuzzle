@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "2908ef2555f4afa4ab6241b85cbb2f84",
-    "applicationID": 29138,
-    "creativeName": "BEQ_V35_NgocNDL_HuyNQ",
+    "applicationID": 42533,
+    "creativeName": "BP_V33_NgocNDL_HuyNQ",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -8908,14 +8908,6 @@
                 "excluded": false
             },
             {
-                "name": "Spine.UnityColor",
-                "excluded": true
-            },
-            {
-                "name": "Spine.IHasRendererObject",
-                "excluded": true
-            },
-            {
                 "name": "Girl.BodyShapeSkins",
                 "excluded": true
             },
@@ -8949,6 +8941,14 @@
             },
             {
                 "name": "Restraint",
+                "excluded": true
+            },
+            {
+                "name": "Spine.UnityColor",
+                "excluded": true
+            },
+            {
+                "name": "Spine.IHasRendererObject",
                 "excluded": true
             }
         ],
@@ -23269,7 +23269,7 @@
                     },
                     {
                         "name": "IndexOf",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IndexOf$1",
@@ -31625,11 +31625,11 @@
                     },
                     {
                         "name": "Sin",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Cos",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SinDeg",
@@ -31641,7 +31641,7 @@
                     },
                     {
                         "name": "Atan2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Clamp",
@@ -31771,7 +31771,7 @@
                     },
                     {
                         "name": "TransformConstraints#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PathConstraints#get",
@@ -32509,7 +32509,7 @@
                     },
                     {
                         "name": "LocalToWorld",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "toString",
@@ -32559,7 +32559,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -32581,7 +32581,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Bones#set",
@@ -33754,90 +33754,6 @@
                 ]
             },
             {
-                "className": "Spine.Ref$1",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "Value#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Value#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "v#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "v#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ctor",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "Spine.AnimationStateAdapter",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "ctor",
-                        "excluded": false
-                    },
-                    {
-                        "name": "addStart",
-                        "excluded": true
-                    },
-                    {
-                        "name": "removeStart",
-                        "excluded": true
-                    },
-                    {
-                        "name": "addInterrupt",
-                        "excluded": true
-                    },
-                    {
-                        "name": "removeInterrupt",
-                        "excluded": true
-                    },
-                    {
-                        "name": "addEnd",
-                        "excluded": true
-                    },
-                    {
-                        "name": "removeEnd",
-                        "excluded": true
-                    },
-                    {
-                        "name": "addDispose",
-                        "excluded": true
-                    },
-                    {
-                        "name": "removeDispose",
-                        "excluded": true
-                    },
-                    {
-                        "name": "addComplete",
-                        "excluded": true
-                    },
-                    {
-                        "name": "removeComplete",
-                        "excluded": true
-                    },
-                    {
-                        "name": "addEvent",
-                        "excluded": true
-                    },
-                    {
-                        "name": "removeEvent",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
                 "className": "Girl",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -34562,6 +34478,90 @@
                         "excluded": false
                     }
                 ]
+            },
+            {
+                "className": "Spine.AnimationStateAdapter",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "addStart",
+                        "excluded": true
+                    },
+                    {
+                        "name": "removeStart",
+                        "excluded": true
+                    },
+                    {
+                        "name": "addInterrupt",
+                        "excluded": true
+                    },
+                    {
+                        "name": "removeInterrupt",
+                        "excluded": true
+                    },
+                    {
+                        "name": "addEnd",
+                        "excluded": true
+                    },
+                    {
+                        "name": "removeEnd",
+                        "excluded": true
+                    },
+                    {
+                        "name": "addDispose",
+                        "excluded": true
+                    },
+                    {
+                        "name": "removeDispose",
+                        "excluded": true
+                    },
+                    {
+                        "name": "addComplete",
+                        "excluded": true
+                    },
+                    {
+                        "name": "removeComplete",
+                        "excluded": true
+                    },
+                    {
+                        "name": "addEvent",
+                        "excluded": true
+                    },
+                    {
+                        "name": "removeEvent",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Spine.Ref$1",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Value#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Value#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "v#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "v#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -34631,8 +34631,8 @@
                         "name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset"
                     },
                     {
-                        "maxWidth": 2048,
-                        "maxHeight": 1024,
+                        "maxWidth": 2356,
+                        "maxHeight": 1092,
                         "format": "png32",
                         "compression": "quantSize",
                         "quality": 65,
@@ -34654,7 +34654,7 @@
                         "maxWidth": 256,
                         "maxHeight": 1024,
                         "format": "png32",
-                        "compression": "quantSize",
+                        "compression": "none",
                         "quality": 65,
                         "script": "",
                         "ext": "",
@@ -34664,7 +34664,7 @@
                         "maxWidth": 1024,
                         "maxHeight": 256,
                         "format": "png32",
-                        "compression": "quantSize",
+                        "compression": "none",
                         "quality": 65,
                         "script": "",
                         "ext": "",

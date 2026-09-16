@@ -1,85 +1,132 @@
+#if UNITY_EDITOR
+
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-#if UNITY_EDITOR
-
 namespace Playable
 {
     public static class SpineStraightAlphaConverter
     {
-        private const int ColorBleedIterations = 8;
-        private const byte ReliableAlphaThreshold = 16;
-        private const int AlphaExpansionIterations = 1;
-        private const float AlphaExpansionStrength = 0.5f;
+        private const int ColorBleedIterations = 16;
+        private const string ConversionMarker = "SpineStraightAlphaConverter:v2";
+        private const string StraightAlphaProperty = "_StraightAlphaInput";
+        private const string StraightAlphaKeyword = "_STRAIGHT_ALPHA_INPUT";
 
         [MenuItem("Tools/Spine/Convert Selected Atlas To Straight Alpha")]
-        static void Convert()
+        private static void Convert()
         {
             var pngPaths = Selection.objects
                 .Select(AssetDatabase.GetAssetPath)
-                .Where(p => !string.IsNullOrEmpty(p) && p.EndsWith(".png"))
-                .Distinct().ToArray();
+                .Where(path => !string.IsNullOrEmpty(path) &&
+                               path.EndsWith(".png", StringComparison.OrdinalIgnoreCase))
+                .Distinct()
+                .ToArray();
 
             if (pngPaths.Length == 0)
             {
-                EditorUtility.DisplayDialog("Spine", "Chọn file .png của atlas trong Project window trước.", "OK");
+                EditorUtility.DisplayDialog("Spine", "Chọn file .png của atlas trong Project trước.", "OK");
                 return;
             }
 
-            if (!EditorUtility.DisplayDialog("Spine",
-                    $"Ghi đè {pngPaths.Length} file PNG, KHÔNG undo được.\n" +
-                    "Chạy 2 lần trên cùng 1 file sẽ làm hỏng ảnh. Commit git trước khi chạy.\n\nTiếp tục?",
-                    "Convert", "Cancel"))
+            if (!EditorUtility.DisplayDialog(
+                    "Spine",
+                    $"Ghi đè {pngPaths.Length} file PNG, không thể Undo. Hãy commit Git trước khi chạy.\n\nTiếp tục?",
+                    "Convert",
+                    "Cancel"))
                 return;
 
-            foreach (var png in pngPaths)
+            var convertedPaths = new List<string>();
+            foreach (var pngPath in pngPaths)
             {
-                Unpremultiply(png);
-                PatchAtlasFile(png);
-                SetImporter(png);
+                if (IsAlreadyConverted(pngPath))
+                {
+                    convertedPaths.Add(pngPath);
+                    continue;
+                }
+
+                if (!AtlasDeclaresStraightAlpha(pngPath))
+                    UnpremultiplyAndBleed(pngPath);
+
+                PatchAtlasFiles(pngPath);
+                convertedPaths.Add(pngPath);
             }
 
-            AssetDatabase.Refresh();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
 
-            foreach (var png in pngPaths)
-                FixMaterials(png);
+            foreach (var pngPath in convertedPaths)
+            {
+                SetImporter(pngPath);
+                FixMaterials(pngPath);
+                PatchLunaTextureRule(pngPath);
+            }
 
             AssetDatabase.SaveAssets();
-            Debug.Log($"[Spine] Đã convert {pngPaths.Length} atlas page sang straight alpha.");
+            Debug.Log($"[Spine] Đã convert {convertedPaths.Count}/{pngPaths.Length} atlas page sang straight alpha.");
         }
 
-        // RGB đã bị nhân alpha lúc export -> chia ngược lại
-        static void Unpremultiply(string path)
+        private static bool IsAlreadyConverted(string path)
         {
-            var tex = new Texture2D(2, 2, TextureFormat.RGBA32, false, false);
-            tex.LoadImage(File.ReadAllBytes(path));
-
-            var px = tex.GetPixels32();
-            for (int i = 0; i < px.Length; i++)
-            {
-                int a = px[i].a;
-                if (a == 0 || a == 255) continue;
-                px[i].r = (byte)Mathf.Min(255, px[i].r * 255 / a);
-                px[i].g = (byte)Mathf.Min(255, px[i].g * 255 / a);
-                px[i].b = (byte)Mathf.Min(255, px[i].b * 255 / a);
-            }
-
-            tex.SetPixels32(px);
-            BleedTransparentPixels(px, tex.width, tex.height);
-            ExpandAlphaCoverage(px, tex.width, tex.height);
-            tex.SetPixels32(px);
-
-            File.WriteAllBytes(path, tex.EncodeToPNG());
-            Object.DestroyImmediate(tex);
+            string userData = AssetImporter.GetAtPath(path)?.userData;
+            return !string.IsNullOrEmpty(userData) && userData.Contains(ConversionMarker);
         }
 
-        static void BleedTransparentPixels(Color32[] pixels, int width, int height)
+        private static bool AtlasDeclaresStraightAlpha(string pngPath)
+        {
+            string directory = Path.GetDirectoryName(pngPath);
+            string pngName = Path.GetFileName(pngPath);
+            if (string.IsNullOrEmpty(directory)) return false;
+
+            return Directory.GetFiles(directory, "*.atlas*")
+                .Where(path => !path.EndsWith(".meta", StringComparison.OrdinalIgnoreCase))
+                .Select(File.ReadAllText)
+                .Any(text => text.Contains(pngName) &&
+                             (text.Contains("pma:false") || text.Contains("pma: false")));
+        }
+
+        private static void UnpremultiplyAndBleed(string path)
+        {
+            var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false, false);
+            try
+            {
+                if (!texture.LoadImage(File.ReadAllBytes(path), false))
+                    throw new InvalidDataException($"Không thể đọc PNG: {path}");
+
+                var pixels = texture.GetPixels32();
+                for (int index = 0; index < pixels.Length; index++)
+                {
+                    int alpha = pixels[index].a;
+                    if (alpha == 0 || alpha == 255) continue;
+
+                    pixels[index].r = UnpremultiplyChannel(pixels[index].r, alpha);
+                    pixels[index].g = UnpremultiplyChannel(pixels[index].g, alpha);
+                    pixels[index].b = UnpremultiplyChannel(pixels[index].b, alpha);
+                }
+
+                BleedIntoFullyTransparentPixels(pixels, texture.width, texture.height);
+                texture.SetPixels32(pixels);
+                texture.Apply(false, false);
+                File.WriteAllBytes(path, texture.EncodeToPNG());
+            }
+            finally
+            {
+                UnityEngine.Object.DestroyImmediate(texture);
+            }
+        }
+
+        private static byte UnpremultiplyChannel(byte channel, int alpha)
+        {
+            return (byte)Mathf.Min(255, (channel * 255 + alpha / 2) / alpha);
+        }
+
+        private static void BleedIntoFullyTransparentPixels(Color32[] pixels, int width, int height)
         {
             var hasColor = new bool[pixels.Length];
             for (int index = 0; index < pixels.Length; index++)
-                hasColor[index] = pixels[index].a >= ReliableAlphaThreshold;
+                hasColor[index] = pixels[index].a > 0;
 
             for (int iteration = 0; iteration < ColorBleedIterations; iteration++)
             {
@@ -92,7 +139,7 @@ namespace Playable
                     for (int x = 0; x < width; x++)
                     {
                         int index = y * width + x;
-                        if (hasColor[index]) continue;
+                        if (hasColor[index] || pixels[index].a != 0) continue;
 
                         int red = 0;
                         int green = 0;
@@ -122,117 +169,138 @@ namespace Playable
 
                         if (count == 0) continue;
 
-                        byte alpha = pixels[index].a;
                         nextPixels[index] = new Color32(
                             (byte)(red / count),
                             (byte)(green / count),
                             (byte)(blue / count),
-                            alpha);
+                            0);
                         nextHasColor[index] = true;
                         changed = true;
                     }
                 }
 
-                System.Array.Copy(nextPixels, pixels, pixels.Length);
+                Array.Copy(nextPixels, pixels, pixels.Length);
                 hasColor = nextHasColor;
                 if (!changed) break;
             }
         }
 
-        static void ExpandAlphaCoverage(Color32[] pixels, int width, int height)
+        private static void PatchAtlasFiles(string pngPath)
         {
-            for (int iteration = 0; iteration < AlphaExpansionIterations; iteration++)
+            string directory = Path.GetDirectoryName(pngPath);
+            string pngName = Path.GetFileName(pngPath);
+            if (string.IsNullOrEmpty(directory)) return;
+
+            foreach (string atlasPath in Directory.GetFiles(directory, "*.atlas*")
+                         .Where(path => !path.EndsWith(".meta", StringComparison.OrdinalIgnoreCase)))
             {
-                var nextPixels = (Color32[])pixels.Clone();
-
-                for (int y = 0; y < height; y++)
-                {
-                    for (int x = 0; x < width; x++)
-                    {
-                        int index = y * width + x;
-                        int maximumNeighbourAlpha = 0;
-
-                        for (int offsetY = -1; offsetY <= 1; offsetY++)
-                        {
-                            int sampleY = y + offsetY;
-                            if (sampleY < 0 || sampleY >= height) continue;
-
-                            for (int offsetX = -1; offsetX <= 1; offsetX++)
-                            {
-                                if (offsetX == 0 && offsetY == 0) continue;
-                                int sampleX = x + offsetX;
-                                if (sampleX < 0 || sampleX >= width) continue;
-
-                                int sampleAlpha = pixels[sampleY * width + sampleX].a;
-                                if (sampleAlpha > maximumNeighbourAlpha)
-                                    maximumNeighbourAlpha = sampleAlpha;
-                            }
-                        }
-
-                        int expandedAlpha = Mathf.RoundToInt(maximumNeighbourAlpha * AlphaExpansionStrength);
-                        if (expandedAlpha > nextPixels[index].a)
-                            nextPixels[index].a = (byte)Mathf.Min(255, expandedAlpha);
-                    }
-                }
-
-                System.Array.Copy(nextPixels, pixels, pixels.Length);
-            }
-        }
-
-        // Spine 4.x: header có dòng pma:true -> đổi thành false. Spine 3.8 không có dòng này.
-        static void PatchAtlasFile(string pngPath)
-        {
-            var dir = Path.GetDirectoryName(pngPath);
-            var pngName = Path.GetFileName(pngPath);
-
-            foreach (var f in Directory.GetFiles(dir, "*.atlas*").Where(f => !f.EndsWith(".meta")))
-            {
-                var text = File.ReadAllText(f);
+                string text = File.ReadAllText(atlasPath);
                 if (!text.Contains(pngName)) continue;
-                if (!text.Contains("pma:true") && !text.Contains("pma: true")) continue;
 
-                File.WriteAllText(f, text.Replace("pma:true", "pma:false").Replace("pma: true", "pma: false"));
+                string patchedText = text
+                    .Replace("pma:true", "pma:false")
+                    .Replace("pma: true", "pma: false");
+                if (patchedText == text) continue;
+
+                File.WriteAllText(atlasPath, patchedText);
+                AssetDatabase.ImportAsset(atlasPath, ImportAssetOptions.ForceSynchronousImport);
             }
         }
 
-        static void SetImporter(string path)
+        private static void SetImporter(string path)
         {
-            if (!(AssetImporter.GetAtPath(path) is TextureImporter ti)) return;
+            if (!(AssetImporter.GetAtPath(path) is TextureImporter importer)) return;
 
             var sourceTexture = new Texture2D(2, 2, TextureFormat.RGBA32, false, false);
-            sourceTexture.LoadImage(File.ReadAllBytes(path));
+            sourceTexture.LoadImage(File.ReadAllBytes(path), false);
             int requiredMaxSize = Mathf.NextPowerOfTwo(Mathf.Max(sourceTexture.width, sourceTexture.height));
-            Object.DestroyImmediate(sourceTexture);
+            UnityEngine.Object.DestroyImmediate(sourceTexture);
 
-            ti.textureType = TextureImporterType.Default;
-            ti.sRGBTexture = true;
-            ti.alphaIsTransparency = true;
-            ti.alphaSource = TextureImporterAlphaSource.FromInput;
-            ti.npotScale = TextureImporterNPOTScale.None;
-            ti.mipmapEnabled = false;
-            ti.wrapMode = TextureWrapMode.Clamp;
-            ti.textureCompression = TextureImporterCompression.Uncompressed;
-            ti.maxTextureSize = Mathf.Clamp(requiredMaxSize, 32, 8192);
-            ti.SaveAndReimport();
+            importer.textureType = TextureImporterType.Default;
+            importer.sRGBTexture = true;
+            importer.alphaIsTransparency = false;
+            importer.alphaSource = TextureImporterAlphaSource.FromInput;
+            importer.npotScale = TextureImporterNPOTScale.None;
+            importer.mipmapEnabled = false;
+            importer.wrapMode = TextureWrapMode.Clamp;
+            importer.filterMode = FilterMode.Bilinear;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.maxTextureSize = Mathf.Clamp(requiredMaxSize, 32, 8192);
+            SetPlatformUncompressed(importer, "WebGL", importer.maxTextureSize);
+            if (string.IsNullOrEmpty(importer.userData) || !importer.userData.Contains(ConversionMarker))
+            {
+                importer.userData = string.IsNullOrWhiteSpace(importer.userData)
+                    ? ConversionMarker
+                    : $"{importer.userData};{ConversionMarker}";
+            }
+            importer.SaveAndReimport();
         }
 
-        // Bật "Straight Alpha Texture" trên material dùng texture này (chỉ quét cùng thư mục)
-        static void FixMaterials(string pngPath)
+        private static void SetPlatformUncompressed(TextureImporter importer, string platform, int maxTextureSize)
         {
-            var tex = AssetDatabase.LoadAssetAtPath<Texture>(pngPath);
-            var dir = Path.GetDirectoryName(pngPath);
+            var settings = importer.GetPlatformTextureSettings(platform);
+            settings.name = platform;
+            settings.overridden = true;
+            settings.maxTextureSize = maxTextureSize;
+            settings.textureCompression = TextureImporterCompression.Uncompressed;
+            settings.format = TextureImporterFormat.RGBA32;
+            settings.crunchedCompression = false;
+            importer.SetPlatformTextureSettings(settings);
+        }
 
-            foreach (var guid in AssetDatabase.FindAssets("t:Material", new[] { dir }))
+        private static void FixMaterials(string pngPath)
+        {
+            var texture = AssetDatabase.LoadAssetAtPath<Texture>(pngPath);
+            string directory = Path.GetDirectoryName(pngPath)?.Replace('\\', '/');
+            if (texture == null || string.IsNullOrEmpty(directory)) return;
+
+            foreach (string guid in AssetDatabase.FindAssets("t:Material", new[] { directory }))
             {
-                var mat = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(guid));
-                if (mat == null || mat.mainTexture != tex) continue;
-                if (!mat.HasProperty("_StraightAlphaInput")) continue;
+                var material = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(guid));
+                if (material == null || material.mainTexture != texture || !material.HasProperty(StraightAlphaProperty))
+                    continue;
 
-                mat.SetFloat("_StraightAlphaInput", 1f);
-                mat.EnableKeyword("_STRAIGHT_ALPHA_INPUT");
-                EditorUtility.SetDirty(mat);
+                material.SetFloat(StraightAlphaProperty, 1f);
+                material.EnableKeyword(StraightAlphaKeyword);
+                EditorUtility.SetDirty(material);
             }
+        }
+
+        private static void PatchLunaTextureRule(string pngPath)
+        {
+            const string lunaConfigPath = "luna.json";
+            if (!File.Exists(lunaConfigPath)) return;
+
+            var sourceTexture = new Texture2D(2, 2, TextureFormat.RGBA32, false, false);
+            sourceTexture.LoadImage(File.ReadAllBytes(pngPath), false);
+            int maxWidth = Mathf.NextPowerOfTwo(sourceTexture.width);
+            int maxHeight = Mathf.NextPowerOfTwo(sourceTexture.height);
+            UnityEngine.Object.DestroyImmediate(sourceTexture);
+
+            string normalizedPath = pngPath.Replace('\\', '/');
+            string[] lines = File.ReadAllLines(lunaConfigPath);
+            int nameLine = Array.FindIndex(lines, line => line.Contains($"\"name\": \"{normalizedPath}\""));
+            if (nameLine < 0)
+            {
+                Debug.LogWarning($"[Spine] Không tìm thấy texture override trong luna.json: {normalizedPath}");
+                return;
+            }
+
+            for (int index = nameLine - 1; index >= 0 && !lines[index].TrimStart().StartsWith("{"); index--)
+            {
+                string indentation = lines[index].Substring(0, lines[index].Length - lines[index].TrimStart().Length);
+                if (lines[index].Contains("\"maxWidth\""))
+                    lines[index] = $"{indentation}\"maxWidth\": {maxWidth},";
+                else if (lines[index].Contains("\"maxHeight\""))
+                    lines[index] = $"{indentation}\"maxHeight\": {maxHeight},";
+                else if (lines[index].Contains("\"compression\""))
+                    lines[index] = $"{indentation}\"compression\": \"none\",";
+            }
+
+            File.WriteAllLines(lunaConfigPath, lines);
+            Debug.Log($"[Spine] Đã tắt Luna texture compression cho {normalizedPath}.");
         }
     }
 }
+
 #endif
