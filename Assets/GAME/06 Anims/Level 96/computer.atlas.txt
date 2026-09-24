@@ -1,7 +1,7 @@
 computer.png
 size:1916,516
 filter:Linear,Linear
-pma:true
+pma:false
 table_new_1
 bounds:2,171,342,659
 offsets:1,2,344,662

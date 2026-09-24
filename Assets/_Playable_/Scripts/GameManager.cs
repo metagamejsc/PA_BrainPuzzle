@@ -13,6 +13,8 @@ namespace Playable
         [Header("Luna Field")] [LunaPlaygroundField("Total Event For CTA")] [SerializeField]
         private int _totalEvent;
 
+        [SerializeField] private int _maxEvent;
+
         [LunaPlaygroundField("End Time")] [SerializeField]
         private int _endTime = 30;
 
@@ -185,7 +187,7 @@ namespace Playable
                 return;
             }
 
-            float progress = Mathf.Clamp01((float)_quantityEvent / _totalEvent);
+            float progress = Mathf.Clamp01((float)_quantityEvent / _maxEvent);
             UpdateProgressText();
 
             _progressTween?.Kill();
@@ -201,7 +203,7 @@ namespace Playable
                 return;
             }
 
-            _progressText.text = _quantityEvent + "/" + _totalEvent;
+            _progressText.text = _quantityEvent + "/" + _maxEvent;
         }
 
         private void UpdateTimerUI(float remainingTime)

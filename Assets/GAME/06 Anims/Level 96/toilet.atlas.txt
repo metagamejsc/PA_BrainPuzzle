@@ -1,7 +1,7 @@
 toilet.png
 size:1528,1012
 filter:Linear,Linear
-pma:true
+pma:false
 asset 34
 bounds:2,484,524,439
 offsets:9,12,540,452

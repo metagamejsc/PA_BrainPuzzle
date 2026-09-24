@@ -1,7 +1,7 @@
 bed.png
 size:2460,692
 filter:Linear,Linear
-pma:true
+pma:false
 bed_new_1
 bounds:2,33,655,903
 offsets:3,3,661,909

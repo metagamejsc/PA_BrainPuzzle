@@ -1,235 +1,238 @@
 {
   "ignores": [
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
-    "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs"
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
+    "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs"
   ],
   "groups": [
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/AudioManager.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/GameManager.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Target.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/ItemRoot.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Item.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Bathroom.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Bed.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SpineAttributes.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Computer.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Door.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Toilet.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Other Examples/Animation Tester/SpineAnimationTesterTool.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Goblins.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonAnimation.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/AttackSpineboy.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineGauge.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderer.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/FootSoldierExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/RenderTextureFadeoutExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTextureFadeout.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTextureBase.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonGraphicRenderTexture.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AtlasAssetBase.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MaterialReplacementExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipsVisualsComponentExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipSystemExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipAssetExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipButtonExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/MixAndMatchSkinsButtonExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/MixAndMatchSkinsExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MixAndMatch.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtility.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonRagdoll.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonRagdoll2D.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/RaggedySpineboy.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityBone.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityGroundConstraint.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityConstraint.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityEyeConstraint.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityKinematicShadow.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MixAndMatchGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/RuntimeLoadFromExportsExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineAtlasAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Legacy/AtlasRegionAttacher.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/OnDemandTextureLoader.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti/SkeletonAnimationMulti.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/JitterEffectExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/TwoByTwoTransformEffectExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonRenderSeparator.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/RenderCombinedMesh.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshRendererBuffers.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SpineMesh.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SkeletonRendererInstruction.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyPole.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AnimationReferenceAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/Raptor.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBlinkPlayer.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerView.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerModel.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerInput.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerViewGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/EventDataReferenceAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/TransitionDictionaryExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mecanim as Logic/SkeletonAnimationHandleExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/HeroEffectsHandlerExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mecanim as Logic/DummyMecanimControllerExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mecanim as Logic/MecanimToAnimationHandleExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyFreeze.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyPoleGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationComplete.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimation.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationEnd.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpawnFromSkeletonDataExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpawnSkeletonGraphicExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonMecanim.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonMecanimRootMotion.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotionBase.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/RootMotionDeltaCompensation.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotion.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataCompatibility.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/BlendModeMaterials.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataModifierAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MecanimAnimationMatchModifier/AnimationMatchModifierAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineSpriteAtlasAsset.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTexture.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MathUtilities.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Ghost/SkeletonGhost.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Ghost/SkeletonGhostRenderer.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/RenderExistingMesh.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonGraphicMirror.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollower.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollowerGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/PointFollower.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/ActivateBasedOnFlipDirection.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBeginnerTwo.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetController.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/HandleEventWithAudioExample.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationFixedTimestep.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Spineboy.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyBodyTilt.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyFootplanter.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyFacialExpression.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineEvent.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/BoneLocalOverride.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/CombinedSkin.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonColorInitialize.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SlotTintBlackFollower.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SpineEventUnityHandler.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetControllerGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/OutlineSkeletonGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonGraphicPlayAnimationAtEvent.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonGraphicCustomMaterials.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Internal/SkeletonSubmeshGraphic.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/BG.cs",
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Ceiling.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/AudioManager.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/GameManager.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Target.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/ItemRoot.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Item.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Bathroom.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Bed.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SpineAttributes.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Computer.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Door.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Toilet.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Other Examples/Animation Tester/SpineAnimationTesterTool.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Goblins.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonAnimation.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/AttackSpineboy.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineGauge.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderer.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/FootSoldierExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/RenderTextureFadeoutExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTextureFadeout.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTextureBase.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonGraphicRenderTexture.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AtlasAssetBase.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MaterialReplacementExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipsVisualsComponentExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipSystemExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipAssetExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipButtonExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/MixAndMatchSkinsButtonExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mix and Match Character Customize/MixAndMatchSkinsExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MixAndMatch.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtility.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonRagdoll.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonRagdoll2D.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/RaggedySpineboy.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityBone.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityGroundConstraint.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityConstraint.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityEyeConstraint.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonUtility Modules/SkeletonUtilityKinematicShadow.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MixAndMatchGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/RuntimeLoadFromExportsExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineAtlasAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Legacy/AtlasRegionAttacher.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/OnDemandTextureLoader.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti/SkeletonAnimationMulti.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/JitterEffectExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/TwoByTwoTransformEffectExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonRenderSeparator.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/RenderCombinedMesh.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshRendererBuffers.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SpineMesh.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SkeletonRendererInstruction.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyPole.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AnimationReferenceAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/Raptor.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBlinkPlayer.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerView.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerModel.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerInput.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerViewGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/EventDataReferenceAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/TransitionDictionaryExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mecanim as Logic/SkeletonAnimationHandleExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/HeroEffectsHandlerExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mecanim as Logic/DummyMecanimControllerExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Mecanim as Logic/MecanimToAnimationHandleExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyFreeze.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyPoleGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationComplete.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimation.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationEnd.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpawnFromSkeletonDataExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpawnSkeletonGraphicExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonMecanim.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonMecanimRootMotion.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotionBase.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/RootMotionDeltaCompensation.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotion.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataCompatibility.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/BlendModeMaterials.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataModifierAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MecanimAnimationMatchModifier/AnimationMatchModifierAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineSpriteAtlasAsset.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonRenderTexture/SkeletonRenderTexture.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MathUtilities.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Ghost/SkeletonGhost.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/Ghost/SkeletonGhostRenderer.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/RenderExistingMesh.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonGraphicMirror.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollower.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollowerGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/PointFollower.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/ActivateBasedOnFlipDirection.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBeginnerTwo.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetController.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/HandleEventWithAudioExample.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationFixedTimestep.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Spineboy.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyBodyTilt.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyFootplanter.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/SpineboyFacialExpression.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineEvent.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/BoneLocalOverride.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/CombinedSkin.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonColorInitialize.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SlotTintBlackFollower.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SpineEventUnityHandler.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetControllerGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/OutlineSkeletonGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SkeletonGraphicPlayAnimationAtEvent.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonGraphicCustomMaterials.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Internal/SkeletonSubmeshGraphic.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/BG.cs",
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/Target/Ceiling.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/GameController.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/GameController.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/MissingScriptCleaner.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/MissingScriptCleaner.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/_Playable_/Scripts/SpineStraightAlphaConverter.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUIToolkit.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUIToolkit.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/DraggableTransform.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/ConstrainedCamera.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/DraggableTransform.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/HurtFlashEffect.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Getting Started Scripts/ConstrainedCamera.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MaterialPropertyBlockExample.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/HurtFlashEffect.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/ReloadSceneOnKeyDown.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/MaterialPropertyBlockExample.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Rotator.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/ReloadSceneOnKeyDown.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SetRigidbodySolverIterations.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Rotator.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/EditorSkeletonPlayer.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine Examples/Scripts/Sample Components/SetRigidbodySolverIterations.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/EditorSkeletonPlayer.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowSkeletonUtilityRootRotation.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowSkeletonUtilityRootRotation.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/BuildUtilities.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MaterialChecks.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/BuildUtilities.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SettingsTriState.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MaterialChecks.cs"
     ],
     [
-      "D:/ProjectGitHub/PA_BEQ/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineTrackEntryEnd.cs"
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SettingsTriState.cs"
+    ],
+    [
+      "D:/ProjectGitHub/PA_BrainPuzzle/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineTrackEntryEnd.cs"
     ],
     [
       "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"

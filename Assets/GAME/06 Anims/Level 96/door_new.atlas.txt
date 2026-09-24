@@ -1,7 +1,7 @@
 door_new.png
 size:628,284
 filter:Linear,Linear
-pma:true
+pma:false
 bed_new_7
 bounds:586,240,42,38
 offsets:1,1,44,40

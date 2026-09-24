@@ -1,7 +1,7 @@
 ptam.png
 size:564,812
 filter:Linear,Linear
-pma:true
+pma:false
 1_boy_1
 bounds:2,225,296,585
 offsets:1,1,298,587
