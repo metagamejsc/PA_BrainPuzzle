@@ -1,0 +1,23 @@
+Girl 4.png
+size:1260,184
+filter:Linear,Linear
+pma:true
+door_closed
+bounds:572,12,167,324
+offsets:1,1,169,326
+rotate:90
+door_opened
+bounds:898,130,49,358
+offsets:1,1,51,360
+rotate:90
+girl_pest5_ending
+bounds:2,2,177,568
+rotate:90
+girl_pest5_idle
+bounds:898,22,106,285
+rotate:90
+makeup1
+bounds:1185,79,58,49
+sleep_fx
+bounds:1185,62,15,15
+offsets:1,1,17,17

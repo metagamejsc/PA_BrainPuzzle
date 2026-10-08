@@ -1,0 +1,18 @@
+Girl 5.png
+size:608,416
+filter:Linear,Linear
+pma:true
+girl_pest4_ending
+bounds:2,2,194,595
+rotate:90
+girl_pest4_ending_laugh
+bounds:556,334,80,50
+offsets:2,1,83,52
+rotate:90
+girl_pest4_idle
+bounds:2,198,216,552
+rotate:90
+heart copy 3
+bounds:556,293,39,34
+offsets:1,1,41,36
+rotate:90

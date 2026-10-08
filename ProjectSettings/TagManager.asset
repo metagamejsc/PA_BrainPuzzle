@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Tap
+  - Draggable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Bg
+    uniqueID: 1452727251
+    locked: 0
+  - name: Unpicked
+    uniqueID: 825063413
+    locked: 0
+  - name: Picked
+    uniqueID: 1955350863
+    locked: 0
+  - name: Above Picked
+    uniqueID: 1526666541
+    locked: 0
+  - name: UI
+    uniqueID: 2267326111
+    locked: 0
+  - name: Normal
+    uniqueID: 1942705923
+    locked: 0
+  - name: Interactable
+    uniqueID: 336373753
+    locked: 0
+  m_RenderingLayers:
+  - Default

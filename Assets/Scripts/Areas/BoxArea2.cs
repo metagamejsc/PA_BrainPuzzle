@@ -1,0 +1,1 @@
+public class BoxArea2 : BoxArea {}

@@ -1,0 +1,23 @@
+Girl 2.png
+size:728,412
+filter:Linear,Linear
+pma:true
+girl_pest2_ending
+bounds:2,2,191,654
+rotate:90
+girl_pest2_ending_laugh
+bounds:658,132,84,49
+offsets:0,1,84,50
+rotate:90
+girl_pest2_hair
+bounds:658,328,68,80
+girl_pest2_idle
+bounds:2,195,213,654
+rotate:90
+hair_roller
+bounds:658,218,56,108
+offsets:1,1,58,110
+heart copy
+bounds:658,91,39,34
+offsets:1,1,41,36
+rotate:90
