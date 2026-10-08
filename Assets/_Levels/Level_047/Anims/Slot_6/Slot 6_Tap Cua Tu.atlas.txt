@@ -1,0 +1,15 @@
+Slot 6_Tap Cua Tu.png
+size:420,264
+filter:Linear,Linear
+pma:true
+door_closed
+bounds:2,104,156,343
+offsets:1,1,158,345
+rotate:90
+door_opened
+bounds:2,2,100,395
+offsets:1,1,102,397
+rotate:90
+fire_extinguisher
+bounds:347,118,69,142
+offsets:1,1,71,144

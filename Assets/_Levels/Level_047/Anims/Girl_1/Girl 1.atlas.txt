@@ -1,0 +1,101 @@
+Girl 1.png
+size:1248,548
+filter:Linear,Linear
+pma:true
+fan_B_anim
+bounds:1143,182,82,100
+offsets:1,1,84,102
+fan_B_anim copy
+bounds:1154,81,85,99
+offsets:1,1,87,101
+fan_F_anim
+bounds:768,133,131,119
+offsets:1,1,133,121
+fan_F_anim copy
+bounds:422,6,128,122
+offsets:1,1,131,124
+fan_M_anim
+bounds:1158,353,97,88
+offsets:1,1,100,90
+rotate:90
+fan_M_anim copy
+bounds:1144,452,100,93
+offsets:1,1,102,95
+fan_belt
+bounds:701,15,121,116
+offsets:1,1,123,118
+fire_extinguisher_anim
+bounds:581,254,143,294
+rotate:90
+foam_fx1
+bounds:2,437,108,876
+offsets:1,1,110,879
+rotate:90
+foam_fx2
+bounds:880,448,262,97
+offsets:2,1,265,99
+girl_climb_arm
+bounds:901,137,106,142
+girl_climb_arm copy
+bounds:877,281,106,142
+rotate:90
+girl_climb_body
+bounds:2,104,173,402
+rotate:90
+girl_climb_dress
+bounds:929,6,103,129
+girl_climb_dress copy
+bounds:824,2,103,129
+girl_climb_leg
+bounds:212,6,96,208
+rotate:90
+girl_climb_leg copy
+bounds:2,6,96,208
+rotate:90
+girl_climb_thigh
+bounds:552,5,139,147
+offsets:1,1,141,149
+rotate:90
+girl_climb_thigh copy
+bounds:406,130,139,147
+offsets:1,1,141,149
+girl_climb_upperarm
+bounds:1009,161,112,82
+rotate:90
+girl_climb_upperarm copy
+bounds:1021,275,112,82
+rotate:90
+girl_vomit
+bounds:1085,392,54,71
+offsets:3,2,58,74
+rotate:90
+rainbow_vomit
+bounds:2,399,36,904
+offsets:1,1,38,906
+rotate:90
+shoes_anim
+bounds:1105,284,95,67
+offsets:1,1,97,69
+smell_fx1
+bounds:1105,45,47,116
+offsets:1,1,49,118
+smoke_fx
+bounds:908,389,57,175
+offsets:2,2,62,179
+rotate:90
+vomit_fx1
+bounds:1093,163,110,48
+offsets:5,4,123,58
+rotate:90
+vomit_fx2
+bounds:1034,39,120,69
+offsets:6,4,133,79
+rotate:90
+wind_fx1
+bounds:2,279,118,577
+offsets:2,9,122,597
+rotate:90
+wind_fx2
+bounds:547,146,106,219
+offsets:1,2,108,222
+rotate:90

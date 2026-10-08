@@ -1,0 +1,649 @@
+{
+  "skeleton": {
+    "hash": "vjmuAz2XXXM",
+    "spine": "4.2.33",
+    "images": "./images/",
+    "audio": "./audio"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "girl_crawl",
+      "parent": "root",
+      "x": 143.17,
+      "y": -350.92
+    },
+    {
+      "name": "ladder_anim",
+      "parent": "girl_crawl",
+      "x": -146.33,
+      "y": 565.75,
+      "scaleY": 1.0365,
+      "color": "ff0000ff"
+    },
+    {
+      "name": "web _anim",
+      "parent": "girl_crawl",
+      "x": -128.23,
+      "y": 670.8,
+      "color": "ff0000ff"
+    }
+  ],
+  "slots": [
+    {
+      "name": "root",
+      "bone": "root",
+      "attachment": "root"
+    },
+    {
+      "name": "ladder_anim",
+      "bone": "ladder_anim"
+    },
+    {
+      "name": "web _anim",
+      "bone": "web _anim"
+    },
+    {
+      "name": "web _anim2",
+      "bone": "web _anim"
+    },
+    {
+      "name": "rope_anim",
+      "bone": "ladder_anim"
+    },
+    {
+      "name": "pipe_anim",
+      "bone": "ladder_anim"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "ladder_anim": {
+          "ladder_anim": {
+            "x": -2.82,
+            "y": -41.4,
+            "width": 162,
+            "height": 927
+          }
+        },
+        "pipe_anim": {
+          "pipe_anim": {
+            "x": 36.18,
+            "y": -18.24,
+            "width": 126,
+            "height": 870
+          }
+        },
+        "root": {
+          "root": {
+            "type": "clipping",
+            "end": "root",
+            "vertexCount": 4,
+            "vertices": [
+              -540.34,
+              628.31,
+              540.41,
+              628.42,
+              540.36,
+              -628.17,
+              -540.39,
+              -628.46
+            ],
+            "color": "ce3a3aff"
+          }
+        },
+        "rope_anim": {
+          "rope_anim": {
+            "x": 2.68,
+            "y": -6.66,
+            "width": 43,
+            "height": 846
+          }
+        },
+        "web _anim": {
+          "web _anim": {
+            "x": -14.42,
+            "y": -144.77,
+            "width": 415,
+            "height": 423
+          }
+        },
+        "web _anim2": {
+          "web _anim": {
+            "x": -14.42,
+            "y": 207.29,
+            "width": 415,
+            "height": 423
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "Act 1": {
+      "bones": {
+        "girl_crawl": {
+          "scale": [
+            {
+              "time": 1.3333
+            }
+          ]
+        },
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 1.025,
+              "y": 1.025
+            }
+          ]
+        }
+      }
+    },
+    "Slot 1_Keo Cai Thang": {
+      "slots": {
+        "ladder_anim": {
+          "rgba": [
+            {
+              "color": "ffffff00"
+            },
+            {
+              "time": 0.1,
+              "color": "ffffffff",
+              "curve": "stepped"
+            },
+            {
+              "time": 2.5,
+              "color": "ffffffff"
+            },
+            {
+              "time": 2.6667,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "ladder_anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 0.271,
+              "y": 0.271,
+              "curve": [
+                0.1,
+                0.271,
+                0.2,
+                1.067,
+                0.1,
+                0.271,
+                0.2,
+                1.067
+              ]
+            },
+            {
+              "time": 0.3,
+              "x": 1.067,
+              "y": 1.067,
+              "curve": [
+                0.422,
+                1.067,
+                0.544,
+                1,
+                0.422,
+                1.067,
+                0.544,
+                1
+              ]
+            },
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 1_Keo Cai Thang_End": {
+      "slots": {
+        "ladder_anim": {
+          "rgba": [
+            {
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.1667,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "ladder_anim"
+            }
+          ]
+        }
+      }
+    },
+    "Slot 1_Keo Cai Thang_Loop": {
+      "slots": {
+        "ladder_anim": {
+          "attachment": [
+            {
+              "name": "ladder_anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "rotate": [
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 2_Keo Mang Nhen": {
+      "slots": {
+        "web _anim": {
+          "rgba": [
+            {
+              "color": "ffffff00"
+            },
+            {
+              "time": 0.1,
+              "color": "ffffffff",
+              "curve": "stepped"
+            },
+            {
+              "time": 2.3333,
+              "color": "ffffffff"
+            },
+            {
+              "time": 2.6667,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "web _anim"
+            }
+          ]
+        },
+        "web _anim2": {
+          "rgba": [
+            {
+              "color": "ffffff00"
+            },
+            {
+              "time": 0.1,
+              "color": "ffffffff",
+              "curve": "stepped"
+            },
+            {
+              "time": 2.3333,
+              "color": "ffffffff"
+            },
+            {
+              "time": 2.6667,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "web _anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 1.025,
+              "y": 1.025
+            }
+          ]
+        },
+        "web _anim": {
+          "scale": [
+            {
+              "x": 0.278,
+              "y": 0.278,
+              "curve": [
+                0.111,
+                0.278,
+                0.222,
+                1.045,
+                0.111,
+                0.278,
+                0.222,
+                1.045
+              ]
+            },
+            {
+              "time": 0.3333,
+              "x": 1.045,
+              "y": 1.045,
+              "curve": [
+                0.444,
+                1.045,
+                0.556,
+                1,
+                0.444,
+                1.045,
+                0.556,
+                1
+              ]
+            },
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 2_Keo Mang Nhen_End": {
+      "slots": {
+        "web _anim": {
+          "rgba": [
+            {
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.3333,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "web _anim"
+            }
+          ]
+        },
+        "web _anim2": {
+          "rgba": [
+            {
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.3333,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "web _anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 1.025,
+              "y": 1.025
+            }
+          ]
+        }
+      }
+    },
+    "Slot 2_Keo Mang Nhen_Loop": {
+      "slots": {
+        "web _anim": {
+          "attachment": [
+            {
+              "name": "web _anim"
+            }
+          ]
+        },
+        "web _anim2": {
+          "attachment": [
+            {
+              "name": "web _anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 1.025,
+              "y": 1.025
+            }
+          ]
+        },
+        "web _anim": {
+          "rotate": [
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 3_Keo Day Thung": {
+      "slots": {
+        "rope_anim": {
+          "rgba": [
+            {
+              "color": "ffffff00"
+            },
+            {
+              "time": 0.1333,
+              "color": "ffffffff",
+              "curve": "stepped"
+            },
+            {
+              "time": 2.3333,
+              "color": "ffffffff"
+            },
+            {
+              "time": 2.6667,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "rope_anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 0.271,
+              "y": 0.271,
+              "curve": [
+                0.1,
+                0.271,
+                0.2,
+                1.067,
+                0.1,
+                0.271,
+                0.2,
+                1.067
+              ]
+            },
+            {
+              "time": 0.3,
+              "x": 1.067,
+              "y": 1.067,
+              "curve": [
+                0.422,
+                1.067,
+                0.544,
+                1,
+                0.422,
+                1.067,
+                0.544,
+                1
+              ]
+            },
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 3_Keo Day Thung_End": {
+      "slots": {
+        "rope_anim": {
+          "rgba": [
+            {
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.3333,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "rope_anim"
+            }
+          ]
+        }
+      }
+    },
+    "Slot 3_Keo Day Thung_Loop": {
+      "slots": {
+        "rope_anim": {
+          "attachment": [
+            {
+              "name": "rope_anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "rotate": [
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 5_Keo Ong Nuoc": {
+      "slots": {
+        "pipe_anim": {
+          "rgba": [
+            {
+              "color": "ffffff00"
+            },
+            {
+              "time": 0.1333,
+              "color": "ffffffff",
+              "curve": "stepped"
+            },
+            {
+              "time": 2.3333,
+              "color": "ffffffff"
+            },
+            {
+              "time": 2.6667,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "pipe_anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "scale": [
+            {
+              "x": 0.271,
+              "y": 0.271,
+              "curve": [
+                0.1,
+                0.271,
+                0.2,
+                1.067,
+                0.1,
+                0.271,
+                0.2,
+                1.067
+              ]
+            },
+            {
+              "time": 0.3,
+              "x": 1.067,
+              "y": 1.067,
+              "curve": [
+                0.422,
+                1.067,
+                0.544,
+                1,
+                0.422,
+                1.067,
+                0.544,
+                1
+              ]
+            },
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    },
+    "Slot 5_Keo Ong Nuoc_End": {
+      "slots": {
+        "pipe_anim": {
+          "rgba": [
+            {
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.3333,
+              "color": "ffffff00"
+            }
+          ],
+          "attachment": [
+            {
+              "name": "pipe_anim"
+            }
+          ]
+        }
+      }
+    },
+    "Slot 5_Keo Ong Nuoc_Loop": {
+      "slots": {
+        "pipe_anim": {
+          "attachment": [
+            {
+              "name": "pipe_anim"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "ladder_anim": {
+          "rotate": [
+            {
+              "time": 0.6667
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Item.png
+size:1352,416
+filter:Linear,Linear
+pma:true
+ladder_anim
+bounds:2,254,160,925
+offsets:1,1,162,927
+rotate:90
+pipe_anim
+bounds:2,128,124,868
+offsets:1,1,126,870
+rotate:90
+rope_anim
+bounds:2,85,41,844
+offsets:1,1,43,846
+rotate:90
+web _anim
+bounds:929,2,412,421
+offsets:1,1,415,423
+rotate:90

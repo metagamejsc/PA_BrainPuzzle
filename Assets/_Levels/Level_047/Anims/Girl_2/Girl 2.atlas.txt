@@ -1,0 +1,21 @@
+Girl 2.png
+size:952,1036
+filter:Linear,Linear
+pma:true
+girl_crawl
+bounds:559,554,478,389
+rotate:90
+girl_crawl_burnt
+bounds:2,20,491,412
+girl_crawl_electrocuted
+bounds:559,77,475,389
+offsets:2,1,478,391
+rotate:90
+girl_crawl_electrocuted_fx1
+bounds:2,434,598,555
+offsets:3,3,602,561
+rotate:90
+girl_disgusted
+bounds:495,2,73,77
+offsets:1,1,75,79
+rotate:90

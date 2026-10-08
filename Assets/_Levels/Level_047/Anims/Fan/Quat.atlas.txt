@@ -1,0 +1,15 @@
+Quat.png
+size:160,408
+filter:Linear,Linear
+pma:true
+fan_B
+bounds:2,288,115,117
+offsets:1,2,117,120
+rotate:90
+fan_F
+bounds:2,2,153,158
+offsets:1,1,155,160
+fan_M
+bounds:2,162,124,125
+offsets:1,1,126,127
+rotate:90
