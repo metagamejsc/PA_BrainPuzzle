@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"LG+3VwZWm8A","spine":"4.2.33","x":-544.51,"y":-631.98,"width":1089.02,"height":1264.03},"bones":[{"name":"root"}],"slots":[{"name":"BG","bone":"root","attachment":"BG"}],"skins":[{"name":"default","attachments":{"BG":{"BG":{"y":0.04,"rotation":-0.32,"width":1082,"height":1258}}}}],"animations":{"Act 1":{"bones":{"root":{"rotate":[{"time":1.3333}]}}}}}

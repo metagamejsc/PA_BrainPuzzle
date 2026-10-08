@@ -1,0 +1,15 @@
+Slot 4_Keo Choi Lau Nha.png
+size:324,332
+filter:Linear,Linear
+pma:true
+scale:0.75
+blood
+bounds:2,2,255,149
+offsets:1,0,257,149
+mop_anim
+bounds:2,153,174,314
+offsets:1,0,175,314
+rotate:90
+mop_fx
+bounds:259,28,123,63
+rotate:90
