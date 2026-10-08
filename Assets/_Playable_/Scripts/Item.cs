@@ -37,12 +37,14 @@ public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDrag
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (Girl.Instance != null && !Girl.Instance.CanReceiveItem) return;
         GameController.Instance?.StopTutorialHand();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (_isPlaced) return;
+        if (Girl.Instance != null && !Girl.Instance.CanReceiveItem) return;
 
         CacheStartState();
         CachePointerOffset(eventData);
@@ -52,6 +54,7 @@ public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDrag
     public void OnDrag(PointerEventData eventData)
     {
         if (_isPlaced) return;
+        if (Girl.Instance != null && !Girl.Instance.CanReceiveItem) return;
 
         if (_dragPlane != null && RectTransformUtility.ScreenPointToWorldPointInRectangle(
                 _dragPlane,
@@ -66,6 +69,7 @@ public class Item : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDrag
     public void OnEndDrag(PointerEventData eventData)
     {
         if (_isPlaced) return;
+        if (Girl.Instance != null && !Girl.Instance.CanReceiveItem) return;
 
         RestoreSortingOrder();
 

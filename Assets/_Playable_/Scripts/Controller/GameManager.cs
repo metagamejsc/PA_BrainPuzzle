@@ -24,6 +24,12 @@ namespace Playable
         [LunaPlaygroundAsset("Background Texture")] [SerializeField]
         private Texture2D _backgroundTexture;
 
+        [LunaPlaygroundAsset("Logo Game")] [SerializeField]
+        private Texture2D _logoTexture;
+
+        [SerializeField] private RawImage[] _logoGame;
+        [SerializeField] private Image[] _logoImages;
+
         [SerializeField] private Button _btnBlock;
         [SerializeField] private Image _background;
         [SerializeField] private GameObject _losePanel;
@@ -60,6 +66,32 @@ namespace Playable
             if (_backgroundTexture != null)
             {
                 _background.sprite = CreateSprite(_backgroundTexture);
+            }
+
+            if (_logoTexture != null)
+            {
+                if (_logoGame != null)
+                {
+                    foreach (var rawImg in _logoGame)
+                    {
+                        if (rawImg != null)
+                        {
+                            rawImg.texture = _logoTexture;
+                        }
+                    }
+                }
+
+                if (_logoImages != null && _logoImages.Length > 0)
+                {
+                    Sprite logoSprite = CreateSprite(_logoTexture);
+                    foreach (var img in _logoImages)
+                    {
+                        if (img != null)
+                        {
+                            img.sprite = logoSprite;
+                        }
+                    }
+                }
             }
 
             if (_backgroundMusic != null)
@@ -176,7 +208,6 @@ namespace Playable
                 {
                     UpdateTimerUI(0f);
                     EventCountdownEndGame?.Invoke();
-                    EndGame();
                     ShowLose();
                 });
         }

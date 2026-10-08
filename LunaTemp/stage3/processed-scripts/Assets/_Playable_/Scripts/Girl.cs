@@ -39,8 +39,15 @@ public class Girl : MonoBehaviour, IPointerClickHandler
     private bool _isReady;
     private bool _isGameEnded;
 
+    public static Girl Instance { get; private set; }
+
     public GirlStatus Status => _status;
     public bool CanReceiveItem => _isReady && !_isGameEnded;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     public string GetActiveSkinDebugInfo()
     {
@@ -67,11 +74,11 @@ public class Girl : MonoBehaviour, IPointerClickHandler
     {
         if (_isReady || _isGameEnded) return;
 
-        GameManager.Instance.CountEvent();
-        GameController.Instance.PlayTutorialHand();
+        _isReady = true;
+        GameManager.Instance?.CountEvent();
+        GameController.Instance?.StopTutorialHand();
         PlayAnimations(_removeGlassesAnimations);
 
-        _isReady = true;
         if (_skeletonGraphic != null)
         {
             _skeletonGraphic.raycastTarget = false;

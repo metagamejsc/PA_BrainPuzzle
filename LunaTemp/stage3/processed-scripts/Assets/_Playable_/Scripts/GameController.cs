@@ -79,7 +79,6 @@ public class GameController : MonoBehaviour
 
     public void StopTutorialHand()
     {
-        if (_isCompleteTut) return;
         _isCompleteTut = true;
         _tutorialTween?.Kill();
         _tutorialTween = null;
