@@ -1,0 +1,14 @@
+car_back.png
+size:1200,848
+filter:Linear,Linear
+pma:true
+car
+bounds:2,2,1085,841
+offsets:1,1,1087,843
+item_bim_bim
+bounds:1089,668,175,106
+offsets:3,3,181,112
+rotate:90
+note_1
+bounds:1089,631,20,35
+offsets:1,1,22,37

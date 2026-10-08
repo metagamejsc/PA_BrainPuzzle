@@ -1,0 +1,7 @@
+cotdien.png
+size:268,788
+filter:Linear,Linear
+pma:true
+cotdien
+bounds:2,2,264,781
+offsets:1,1,266,783
