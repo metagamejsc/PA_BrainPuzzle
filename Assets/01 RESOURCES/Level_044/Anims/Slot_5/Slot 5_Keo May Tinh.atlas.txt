@@ -1,0 +1,11 @@
+Slot 5_Keo May Tinh.png
+size:244,108
+filter:Linear,Linear
+pma:true
+scale:0.75
+laptop
+bounds:2,4,121,102
+offsets:1,0,122,103
+laptop_on
+bounds:125,2,114,104
+offsets:1,11,119,119

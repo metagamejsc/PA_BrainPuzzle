@@ -1,0 +1,18 @@
+Slot 2_Keo Quat.png
+size:272,288
+filter:Linear,Linear
+pma:true
+scale:0.75
+fan_B_shadow
+bounds:2,164,119,170
+rotate:90
+fan_F1
+bounds:109,26,136,158
+offsets:0,0,137,158
+rotate:90
+fan_M1
+bounds:174,174,94,109
+offsets:0,0,94,110
+smoke
+bounds:2,2,105,160
+offsets:5,17,111,179

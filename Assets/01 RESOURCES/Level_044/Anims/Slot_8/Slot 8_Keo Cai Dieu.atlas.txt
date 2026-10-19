@@ -1,0 +1,7 @@
+Slot 8_Keo Cai Dieu.png
+size:92,256
+filter:Linear,Linear
+pma:true
+scale:0.75
+kite
+bounds:2,2,85,251

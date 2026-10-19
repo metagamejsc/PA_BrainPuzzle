@@ -1,0 +1,10 @@
+Slot 7_Keo Bong Den.png
+size:240,100
+filter:Linear,Linear
+pma:true
+scale:0.75
+lightbulb_off
+bounds:2,2,191,23
+lightbulb_on
+bounds:2,27,234,69
+offsets:4,3,242,75

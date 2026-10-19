@@ -1,0 +1,219 @@
+{
+  "ignores": [
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/AnimationState.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
+    "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/ActiveActionSkin.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/SkinController.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/ActiveDefaultSkin.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AnimationController.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/ActiveAnim.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/AnimationState.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/PlayAnimation.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SpineAttributes.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AnimationReferenceAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/PointFollower.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderer.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollower.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollowerGraphic.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Bone.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Animation.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/AnimationStateData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/BlendModeMaterials.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/BlendMode.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SkeletonBinary.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SkeletonLoader.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SkeletonJson.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentLoader.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/AtlasAttachmentLoader.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Atlas.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/MeshAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Skeleton.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/VertexAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/BoundingBoxAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SkeletonBounds.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/ExposedList.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtility.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Slot.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/RegionAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Skin.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SkeletonData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/PhysicsConstraint.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/IUpdatable.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/PathConstraint.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/PathConstraintData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/ConstraintData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/IkConstraintData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/BoneData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/PhysicsConstraintData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SlotData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/ClippingAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/SkeletonClipping.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonRenderSeparator.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SkeletonRendererInstruction.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshRendererBuffers.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SpineMesh.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/Attachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/PathAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/PointAttachment.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/IHasTextureRegion.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/Sequence.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/TextureRegion.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataModifierAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/MathUtils.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/TransformConstraint.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotionBase.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonMecanimRootMotion.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonMecanim.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotion.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/TransformConstraintData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Triangulator.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityBone.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityConstraint.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/EventDataReferenceAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/EventData.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Event.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineEvent.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonAnimation.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/ActivateBasedOnFlipDirection.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AtlasAssetBase.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/OnDemandTextureLoader.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineAtlasAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineSpriteAtlasAsset.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Json.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Attachments/AttachmentType.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataCompatibility.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimation.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationComplete.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationEnd.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineTrackEntryEnd.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/InteractController.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonGraphicCustomMaterials.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Internal/SkeletonSubmeshGraphic.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/ActiveObjectOnDisable.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/DeactiveObjectOnDisable.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LayoutController.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TutController.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/01 RESOURCES/Level_044/Scripts/Battery.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/01 RESOURCES/Level_044/Scripts/BatteryText.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/EditorSkeletonPlayer.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowSkeletonUtilityRootRotation.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/BuildUtilities.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MaterialChecks.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MathUtilities.cs"
+    ],
+    [
+      "F:/UnityProjects/BMTP_V17/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SettingsTriState.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

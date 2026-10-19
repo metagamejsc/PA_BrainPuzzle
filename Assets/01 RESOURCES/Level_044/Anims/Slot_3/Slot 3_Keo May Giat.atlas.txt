@@ -1,0 +1,10 @@
+Slot 3_Keo May Giat.png
+size:552,312
+filter:Linear,Linear
+pma:true
+smoke
+bounds:410,96,139,214
+offsets:7,22,148,238
+washing_machine
+bounds:2,2,308,406
+rotate:90

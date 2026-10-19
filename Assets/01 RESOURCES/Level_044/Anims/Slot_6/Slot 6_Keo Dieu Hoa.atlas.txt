@@ -1,0 +1,16 @@
+Slot 6_Keo Dieu Hoa.png
+size:460,200
+filter:Linear,Linear
+pma:true
+AC
+bounds:2,2,193,196
+offsets:1,1,195,198
+AC_swing_closed
+bounds:328,101,113,97
+offsets:1,1,115,99
+AC_swing_opened
+bounds:328,18,130,81
+offsets:1,1,132,83
+wind_fx
+bounds:197,67,131,129
+rotate:90

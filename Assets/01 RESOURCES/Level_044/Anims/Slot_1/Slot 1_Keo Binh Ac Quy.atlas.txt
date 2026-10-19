@@ -1,0 +1,11 @@
+Slot 1_Keo Binh Ac Quy.png
+size:268,112
+filter:Linear,Linear
+pma:true
+scale:0.75
+battery
+bounds:164,7,99,100
+smoke
+bounds:2,2,105,160
+offsets:5,17,111,179
+rotate:90
